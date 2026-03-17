@@ -3,42 +3,41 @@ permalink: /
 title: ""
 excerpt: ""
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
 {% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" |
-append: site.repository | append: "@" %}
+{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
 {% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository |
-append: "/" %}
+{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
 {% endif %}
-{% assign url = gsDataBaseUrl |
-append: "google-scholar-stats/gs_data_shieldsio.json" %}
+{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
 
-I am currently a Master's student at **City University of Hong Kong (Dongguan)** and visiting student in **Great Bay University** supervised by **Zitong Yu**, Previously, I received my Bachelor's degree in Artificial Intelligence from **Jilin University** in 2025.
+I am currently a Master's student at **City University of Hong Kong (Dongguan)** and visiting student in **Great Bay University** supervised by **Zitong Yu**. Previously, I received my Bachelor's degree in Artificial Intelligence from **Jilin University** in 2025.
 
 My research interests include **Micro-expression Recognition**, **Micro-expression AUs Detection**, and **Large Language Models**. I am currently focusing on intelligent analysis of micro-expressions using large models and agents to identify hidden emotional states.
 
-I have published a paper at conference such as CCBR. (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=yIlUO94AAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+I have published papers at conferences and on arXiv, such as CCBR. (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=yIlUO94AAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
 
 # 🔥 News
 - *2025.06*: &nbsp;🎉🎉 Our paper "AULLM" has been accepted by **CCBR 2025** (The 19th Chinese Conference on Biometric Recognition) **oral**.
 
-# 📝 Publications 
+# 📝 Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arxiv</div><img src='images/aullmpp.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/aullmpp.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [AULLM++: Structural Reasoning with Large Language Models for Micro-Expression Recognition](https://scholar.google.com/citations?user=yIlUO94AAAAJ)
 
 **Zhishu Liu**, Kaishen Yuan, Bo Zhao, Hui Ma, Zitong Yu.
 
-[**Project**](#) <strong><span class='show_paper_citations' data='yIlUO94AAAAJ:ALROH1vI_8AC'></span></strong>
+[**Project**](#) <strong><span class='show_paper_citations' data='yIlUO94AAAAJ:d1gkVwhDpl0C'></span></strong>
+- This paper introduces structural reasoning with large language models to enhance micro-expression action units detection accuracy.
+</div></div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CCBR 2025</div><img src='images/CCBR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -49,10 +48,7 @@ I have published a paper at conference such as CCBR. (You can also use google sc
 
 [**Project**](#) <strong><span class='show_paper_citations' data='yIlUO94AAAAJ:ALROH1vI_8AC'></span></strong>
 - This paper addresses the task of micro-vision by using large models to maximize the accuracy of micro-expression action units (AUs) recognition.
-
-</div>
-</div>
-
+</div></div>
 
 # 🎖 Honors and Awards
 - *2025* 2025 CCF Dongguan Student Member Service Appreciation Award
@@ -65,4 +61,4 @@ I have published a paper at conference such as CCBR. (You can also use google sc
 # 📖 Educations
 - *2025.09 - 2027.06 (Expected)*, Master in Computer Science, **City University of Hong Kong (Dongguan)**
 - *2025.05 - 2027.08 (Expected)*, Visiting Student in YU Vision Group, **Great Bay University**
-- *2021.09 - 2025.06*, Bachelor in Artificial Intelligence, **Jilin University** 
+- *2021.09 - 2025.06*, Bachelor in Artificial Intelligence, **Jilin University**  
