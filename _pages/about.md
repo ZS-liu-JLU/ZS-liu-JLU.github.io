@@ -34,16 +34,29 @@ I have published a paper at conference such as CCBR. (You can also use google sc
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CCBR 2025</div><img src='images/CCBR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[AULLM: Intelligent Analysis of Micro-expressions using Large Models](https://scholar.google.com/citations?user=yIlUO94AAAAJ)
+[AU-LLM: Micro-Expression Action Unit Detection via Enhanced LLM-Based Feature Fusion](https://scholar.google.com/citations?user=yIlUO94AAAAJ)
 
 **Zhishu Liu**, Kaishen Yuan, Bo Zhao, Yong Xu, Zitong Yu.
+
+[**Project**](#) <strong><span class='show_paper_citations' data='yIlUO94AAAAJ:ALROH1vI_8AC'></span></strong>
+- This paper addresses the task of micro-vision by using large models to maximize the accuracy of micro-expression action units (AUs) recognition.
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arxiv</div><img src='images/aullmpp.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[AULLM++: Structural Reasoning with Large Language Models for Micro-Expression Recognition](https://scholar.google.com/citations?user=yIlUO94AAAAJ)
+
+**Zhishu Liu**, Kaishen Yuan, Bo Zhao, Hui Ma, Zitong Yu.
 
 [**Project**](#) <strong><span class='show_paper_citations' data='yIlUO94AAAAJ:ALROH1vI_8AC'></span></strong>
 - This paper addresses the task of micro-vision by using large models to maximize the accuracy of micro-expression action units (AUs) recognition.
 </div>
 </div>
 
+
 # 🎖 Honors and Awards
+- *2025* 2025 CCF Dongguan Student Member Service Appreciation Award
 - *2025* Jilin University Outstanding Student Leader Award 
 - *2025* Jilin University Third-Class Scholarship 
 - *2024* Outstanding Communist Youth League Cadre of Jilin University 
