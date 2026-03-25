@@ -17,11 +17,11 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently a Master's student at **City University of Hong Kong (Dongguan)** and visiting student in **Great Bay University** supervised by **Zitong Yu**. Previously, I received my Bachelor's degree in Artificial Intelligence from **Jilin University** in 2025.
+I am Zhishu Liu, currently an MSc student in Computer Science at City University of Hong Kong (Dongguan). I received my bachelor’s degree from the College of Artificial Intelligence, Jilin University, advised by **Prof. Tieru Wu**, and I am now also a visiting student at Great Bay University under the supervision of **Prof. Zitong Yu**.
 
-My research interests include **Micro-expression Recognition**, **Micro-expression AUs Detection**, and **Large Language Models**. I am currently focusing on intelligent analysis of micro-expressions using large models and agents to identify hidden emotional states.
+My research focuses on micro-expression recognition, micro-AU recognition, and multimodal large models for affective computing. I hope to pursue research that is both interesting and meaningful. 
 
-I have published papers at conferences and on arXiv, such as CCBR. (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=yIlUO94AAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+I have also served as a reviewer for Pattern Recognition.
 
 # 🔥 News
 - *2025.06*: &nbsp;🎉🎉 Our paper "AULLM" has been accepted by **CCBR 2025** (The 19th Chinese Conference on Biometric Recognition) **oral**.
