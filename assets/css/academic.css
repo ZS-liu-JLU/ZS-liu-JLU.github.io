@@ -99,11 +99,15 @@ body.academic-body {
 .hero-sticker { position: absolute; z-index: 4; padding: 7px 13px; border: var(--line); border-radius: 10px; box-shadow: 3px 3px 0 var(--ink); font-size: 12px; font-weight: 850; white-space: nowrap; }
 .sticker-one { right: -30px; top: 31px; background: var(--yellow); transform: rotate(9deg); }
 .sticker-two { left: -25px; bottom: 23px; background: var(--blue-soft); transform: rotate(-7deg); }
-.profile-strip { display: flex; align-items: center; gap: 17px; padding: 20px 25px; border: var(--line); border-radius: var(--radius); background: var(--white); box-shadow: 4px 4px 0 #d9e5ff; }
+.profile-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 20px; align-items: stretch; }
+.profile-strip { display: flex; align-items: center; flex-wrap: nowrap; gap: 17px; min-width: 0; padding: 20px 25px; border: var(--line); border-radius: var(--radius); background: var(--white); box-shadow: 4px 4px 0 #d9e5ff; }
+.profile-strip-undergraduate { background: #fffae8; box-shadow: 4px 4px 0 #f1df98; }
 .profile-avatar { width: 58px; height: 58px; flex-shrink: 0; object-fit: cover; border: var(--line); border-radius: 50%; background: var(--yellow-soft); }
+.profile-school-badge { display: grid; place-items: center; width: 58px; height: 58px; flex: 0 0 58px; border: var(--line); border-radius: 15px; background: var(--yellow); box-shadow: 2px 2px 0 var(--ink); font-size: 16px; line-height: 1; font-weight: 900; letter-spacing: .3px; transform: rotate(-5deg); }
 .profile-details { flex: 1; min-width: 0; }
 .profile-name { display: block; margin: 0; font-size: 16px; font-weight: 850; }
 .profile-affiliation { display: block; margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
+.profile-meta { display: block; margin-top: 6px; color: var(--muted); font-size: 14px; line-height: 1.55; }
 .research-tags { display: flex; flex-wrap: wrap; gap: 8px; max-width: 440px; }
 .hero-copy .research-tags { margin-top: 21px; }
 .tag { display: inline-block; padding: 4px 11px; border: 1px solid #c8d4ec; border-radius: 7px; background: var(--blue-soft); font-size: 13px; line-height: 1.5; font-weight: 750; white-space: nowrap; }
@@ -209,7 +213,6 @@ body.academic-body {
   .hero-subtitle { font-size: 19px; }
   .hero-art { padding: 17px 5px; }
   .hero-sticker { font-size: 10px; padding: 6px 10px; }
-  .profile-strip { flex-wrap: wrap; }
   .profile-strip .research-tags { max-width: none; width: 100%; margin-left: 75px; }
   .about-grid { gap: 25px; grid-template-columns: 1.15fr 1fr; }
   .paper-card { grid-template-columns: 245px minmax(0, 1fr); }
@@ -218,6 +221,9 @@ body.academic-body {
   .journey-grid { gap: 32px; }
   .contact-card { padding: 29px; }
   .contact-links { max-width: 210px; }
+}
+@media (max-width: 900px) {
+  .profile-grid { grid-template-columns: minmax(0, 1fr); gap: 17px; }
 }
 @media (max-width: 760px) {
   html { scroll-padding-top: 90px; }
@@ -248,6 +254,7 @@ body.academic-body {
   .sticker-two { bottom: 14px; left: -7px; }
   .profile-strip { gap: 14px; padding: 18px; border-radius: 16px; }
   .profile-avatar { width: 48px; height: 48px; }
+  .profile-school-badge { width: 48px; height: 48px; flex-basis: 48px; border-radius: 13px; font-size: 14px; }
   .profile-strip .research-tags { margin-left: 0; }
   .content-section { padding-top: 63px; scroll-margin-top: 95px; }
   .section-header { gap: 14px; margin-bottom: 25px; }

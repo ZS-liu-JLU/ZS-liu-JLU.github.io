@@ -29,9 +29,15 @@ redirect_from:
   </div>
 </section>
 
-<div class="profile-strip">
-  <img class="profile-avatar" src="{{ site.author.avatar | relative_url }}" alt="Portrait of Zhishu Liu" width="64" height="64" decoding="async">
-  <div class="profile-details"><span class="profile-name">MSc Student · Computer Science</span><span class="profile-affiliation">City University of Hong Kong (Dongguan) · Visiting student at Great Bay University</span></div>
+<div class="profile-grid" role="group" aria-label="Academic background">
+  <div class="profile-strip">
+    <img class="profile-avatar" src="{{ site.author.avatar | relative_url }}" alt="Portrait of Zhishu Liu" width="64" height="64" decoding="async">
+    <div class="profile-details"><span class="profile-name">MSc Student · Computer Science</span><span class="profile-affiliation">City University of Hong Kong (Dongguan) · Visiting student at Great Bay University</span></div>
+  </div>
+  <div class="profile-strip profile-strip-undergraduate">
+    <span class="profile-school-badge" aria-hidden="true">JLU</span>
+    <div class="profile-details"><span class="profile-name">Bachelor’s degree · Artificial Intelligence</span><span class="profile-affiliation">College of Artificial Intelligence · Jilin University</span><span class="profile-meta">2021.09 – 2025.06 · Advised by Prof. Tieru Wu</span></div>
+  </div>
 </div>
 
 <section class="content-section" id="about" aria-labelledby="about-title">

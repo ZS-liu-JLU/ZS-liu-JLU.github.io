@@ -27,5 +27,34 @@ first_author:
     project_url: "https://github.com/ZS-liu-JLU/AU-LLMs"
     citation_id: "yIlUO94AAAAJ:ALROH1vI_8AC"
 
-# Add verified co-authored papers here; never move first-author papers into this list.
-collaborations: []
+# Verified against the arXiv author lists and original manuscripts on 2026-10-08.
+# Keep preprints labelled as preprints until an acceptance is confirmed.
+collaborations:
+  - title: "AffectAgent: Collaborative Multi-Agent Reasoning for Retrieval-Augmented Multimodal Emotion Recognition"
+    short_name: "AffectAgent"
+    authors: ["Zeheng Wang", "Zitong Yu", "Yijie Zhu", "Bo Zhao", "Haochen Liang", "Taorui Wang", "Wei Xia", "Jiayu Zhang", "Zhishu Liu", "Hui Ma", "Fei Ma", "Qi Tian"]
+    venue: "ACM Multimedia 2026"
+    year: "2026"
+    badge: "Accepted"
+    summary: "Collaborative multi-agent reasoning with retrieval-augmented generation for multimodal emotion recognition."
+    paper_url: "https://arxiv.org/abs/2604.12735"
+    project_url: "https://github.com/Wz1h1NG/AffectAgent"
+    # arXiv v2 explicitly confirms acceptance by ACM MM 2026.
+    source_url: "https://arxiv.org/abs/2604.12735v2"
+  - title: "Navigating the Emotion Tree: Hierarchical Hyperbolic RAG for Multimodal Emotion Recognition"
+    short_name: "HyperEmo-RAG"
+    authors: ["Zeheng Wang", "Bo Zhao", "Yijie Zhu", "Zhishu Liu", "Hui Ma", "Ruixin Zhang", "Shouhong Ding", "Qianyu Xie", "Zitong Yu"]
+    venue: "arXiv preprint"
+    year: "2026"
+    summary: "Hierarchical hyperbolic retrieval and structured evidence injection for multimodal emotion recognition."
+    paper_url: "https://arxiv.org/abs/2605.18884"
+    source_url: "https://arxiv.org/html/2605.18884v1"
+  - title: "Complementarity-Supervised Spectral-Band Routing for Multimodal Emotion Recognition"
+    short_name: "Atsuko"
+    authors: ["Zhexian Huang", "Bo Zhao", "Hui Ma", "Zhishu Liu", "Jie Zhang", "Ruixin Zhang", "Shouhong Ding", "Zitong Yu"]
+    venue: "arXiv preprint"
+    year: "2026"
+    summary: "Complementarity-supervised routing across spectral bands and modalities for fine-grained emotion recognition."
+    paper_url: "https://arxiv.org/abs/2603.13340"
+    project_url: "https://github.com/EddyCodex/Atsuko"
+    source_url: "https://arxiv.org/html/2603.13340v1"
