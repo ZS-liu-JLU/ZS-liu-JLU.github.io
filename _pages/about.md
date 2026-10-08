@@ -96,6 +96,8 @@ redirect_from:
   </div>
 </section>
 
+{% include visitor-map.html %}
+
 <section class="content-section" id="contact" aria-labelledby="contact-title">
   <div class="contact-card">
     <div class="contact-copy"><p class="section-eyebrow">Say hello</p><h2 class="section-title" id="contact-title">Let's connect.</h2><p>Find my research, code, or get in touch.</p></div>

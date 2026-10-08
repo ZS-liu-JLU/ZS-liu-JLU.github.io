@@ -11,6 +11,11 @@ description              : "Master Student in Computer Science at CityUHK(DG) "
 repository               : "ZS-liu-JLU/ZS-liu-JLU.github.io"
 google_scholar_stats_use_cdn : true
 
+# Public, country-level visitor map; this site ID is an embed identifier.
+visitor_map:
+  domain: "zs-liu-jlu.github.io"
+  site_id: "c196c9c2-4160-4d07-a7fe-d1602fecac44"
+
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
 

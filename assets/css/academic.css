@@ -100,7 +100,7 @@ body.academic-body {
 .sticker-one { right: -30px; top: 31px; background: var(--yellow); transform: rotate(9deg); }
 .sticker-two { left: -25px; bottom: 23px; background: var(--blue-soft); transform: rotate(-7deg); }
 .profile-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 20px; align-items: stretch; }
-.profile-strip { display: flex; align-items: center; flex-wrap: nowrap; gap: 17px; min-width: 0; padding: 20px 25px; border: var(--line); border-radius: var(--radius); background: var(--white); box-shadow: 4px 4px 0 #d9e5ff; }
+.profile-strip { display: flex; align-items: center; flex-wrap: nowrap; gap: 17px; min-width: 0; padding: 20px 25px; border: var(--line); border-radius: var(--radius); background: var(--white); box-shadow: 4px 4px 0 #d9e5ff; transition: transform .2s ease; }
 .profile-strip-undergraduate { background: #fffae8; box-shadow: 4px 4px 0 #f1df98; }
 .profile-avatar { width: 58px; height: 58px; flex-shrink: 0; object-fit: cover; border: var(--line); border-radius: 50%; background: var(--yellow-soft); }
 .profile-school-badge { display: grid; place-items: center; width: 58px; height: 58px; flex: 0 0 58px; border: var(--line); border-radius: 15px; background: var(--yellow); box-shadow: 2px 2px 0 var(--ink); font-size: 16px; line-height: 1; font-weight: 900; letter-spacing: .3px; transform: rotate(-5deg); }
@@ -124,7 +124,7 @@ body.academic-body {
 .about-copy p { margin-bottom: 18px; }
 .about-copy p:last-child { margin-bottom: 0; }
 .about-copy strong { font-weight: 800; }
-.research-card { position: relative; padding: 24px 25px; border: var(--line); border-radius: var(--radius); background: var(--blue-soft); box-shadow: 4px 4px 0 #a8c0fa; }
+.research-card { position: relative; padding: 24px 25px; border: var(--line); border-radius: var(--radius); background: var(--blue-soft); box-shadow: 4px 4px 0 #a8c0fa; transition: transform .2s ease; }
 .research-card > span[aria-hidden] { position: absolute; top: 15px; right: 20px; color: #5b80cf; font-size: 25px; }
 .research-card-title { margin-bottom: 14px; font-size: 17px; font-weight: 850; }
 .interest-list { list-style: none; padding: 0; margin: 0; }
@@ -138,8 +138,7 @@ body.academic-body {
 
 /* Publication images retain the complete figure, rather than cropping research. */
 .publication-list { display: grid; gap: 25px; }
-.paper-card { display: grid; grid-template-columns: 290px minmax(0, 1fr); overflow: hidden; border: var(--line); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); transition: transform .2s ease, box-shadow .2s ease; transform-style: preserve-3d; }
-.paper-card:hover { box-shadow: 6px 6px 0 var(--ink); }
+.paper-card { display: grid; grid-template-columns: 290px minmax(0, 1fr); overflow: hidden; border: var(--line); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); transition: transform .2s ease; transform-style: preserve-3d; }
 .paper-visual { position: relative; display: flex; align-items: center; justify-content: center; min-height: 250px; padding: 27px 17px; border-right: var(--line); background: var(--blue-soft); background-image: radial-gradient(rgba(73, 124, 245, .13) 1px, transparent 1px); background-size: 11px 11px; }
 .paper-card:nth-child(even) .paper-visual { background-color: var(--yellow-soft); background-image: radial-gradient(rgba(180, 139, 0, .14) 1px, transparent 1px); }
 .paper-image { width: 100%; height: auto; max-height: 240px; object-fit: contain; border-radius: 6px; background: var(--white); box-shadow: 0 4px 15px rgba(24, 40, 73, .08); }
@@ -195,6 +194,34 @@ body.academic-body {
 .legacy-anchor { display: block; position: relative; top: -105px; visibility: hidden; }
 .reveal { transition: opacity .55s ease, transform .55s ease; }
 .reveal.is-revealing { opacity: 0; transform: translateY(15px); }
+
+/* Only small decorations float. Reading content and research figures stay still. */
+@keyframes spark-drift-one {
+  0%, 100% { transform: translateY(0) rotate(-12deg); }
+  50% { transform: translateY(-4px) rotate(-9deg); }
+}
+@keyframes spark-drift-two {
+  0%, 100% { transform: translateY(0) rotate(13deg); }
+  50% { transform: translateY(3px) rotate(16deg); }
+}
+@keyframes sticker-drift {
+  0%, 100% { transform: translateY(0) rotate(9deg); }
+  50% { transform: translateY(-3px) rotate(8deg); }
+}
+@keyframes brand-sway {
+  0%, 100% { transform: rotate(-12deg); }
+  30% { transform: rotate(-19deg); }
+  65% { transform: rotate(-6deg); }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .spark-one { animation: spark-drift-one 6.8s ease-in-out infinite; }
+  .spark-two { animation: spark-drift-two 8s ease-in-out -2s infinite; }
+  .sticker-one { animation: sticker-drift 7.5s ease-in-out -1.5s infinite; }
+  .brand:hover .brand-mark, .brand:focus-visible .brand-mark { animation: brand-sway .7s ease-in-out; }
+  .paper-card:not(.is-revealing):hover,
+  .profile-strip:hover,
+  .research-card:not(.is-revealing):hover { transform: translateY(-3px); }
+}
 
 @media (min-width: 1280px) {
   .hero-art { margin-right: 17px; }
@@ -331,7 +358,7 @@ body.academic-body {
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal.is-revealing { opacity: 1; transform: none; }
   .button:hover { transform: none; }
 }

@@ -1,0 +1,19 @@
+<section class="content-section" id="visitors" aria-labelledby="visitors-title">
+  <header class="section-header"><span class="section-number" aria-hidden="true">05</span><div><p class="section-eyebrow">Hello from around the world</p><h2 class="section-title" id="visitors-title">Visitors, assemble!</h2></div></header>
+  <div class="visitor-card" data-visitor-map data-countries-url="{{ '/assets/data/visitor-countries.json' | relative_url }}" data-site-domain="{{ site.visitor_map.domain | escape }}" data-site-id="{{ site.visitor_map.site_id | escape }}">
+    <div class="visitor-card-header">
+      <div><span class="visitor-kicker"><span class="map-pokeball" aria-hidden="true"></span> A little worldwide adventure</span><p class="visitor-description">Every visiting region gets a Poké Ball. Thanks for stopping by!</p></div>
+      <div class="visitor-stats" aria-label="Visitor statistics"><div><strong data-visitor-total>—</strong><span>visits · past 30 days</span></div><div><strong data-visitor-regions>—</strong><span>regions</span></div></div>
+    </div>
+    <div class="visitor-map-canvas" data-map-canvas aria-label="World map with visitor regions">
+      {% include visitor-world.svg %}
+      <div class="visitor-markers" data-visitor-markers aria-label="Visiting regions"></div>
+      <div class="visitor-tosses" data-visitor-tosses></div>
+    </div>
+    <div class="visitor-map-toolbar"><p class="visitor-map-help">Select a Poké Ball for visit counts. Tap the map to toss one for fun.</p><button class="visitor-toss-button" type="button" data-toss-ball>Toss a ball <span aria-hidden="true">↗</span></button></div>
+    <div class="visitor-map-detail" data-map-detail role="status" aria-live="polite">Loading visitor regions…</div>
+    <div class="visitor-region-list" data-visitor-region-list aria-label="Visitor regions"></div>
+    <p class="visitor-map-credit">Approximate country and region locations · <a href="https://feed-pulse.com/" target="_blank" rel="noopener noreferrer">Visitor data by FeedPulse</a> · <a href="https://www.naturalearthdata.com/about/terms-of-use/" target="_blank" rel="noopener noreferrer">Map by Natural Earth</a></p>
+    <noscript><p class="visitor-map-help">Enable JavaScript to explore visitor regions.</p></noscript>
+  </div>
+</section>

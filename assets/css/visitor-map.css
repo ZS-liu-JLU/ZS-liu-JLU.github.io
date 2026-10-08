@@ -1,0 +1,40 @@
+.visitor-card { overflow: hidden; border: var(--line); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); }
+.visitor-card-header { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 26px 29px; }
+.visitor-kicker { display: inline-flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 850; }
+.visitor-description { margin: 8px 0 0; max-width: 550px; color: var(--muted); font-size: 14px; }
+.visitor-stats { display: flex; gap: 27px; flex-shrink: 0; }
+.visitor-stats div { display: flex; flex-direction: column; }
+.visitor-stats strong { font-size: 29px; font-weight: 900; line-height: 1.2; }
+.visitor-stats span { color: var(--muted); font-size: 12px; white-space: nowrap; }
+.visitor-map-canvas { position: relative; isolation: isolate; width: 100%; aspect-ratio: 2; overflow: hidden; border-block: var(--line); background-color: #edf5ff; background-image: linear-gradient(#dce8f9 1px, transparent 1px), linear-gradient(90deg, #dce8f9 1px, transparent 1px); background-size: 10% 20%; cursor: crosshair; }
+.visitor-map-canvas > svg { display: block; width: 100%; height: 100%; }
+.visitor-country { fill: #fff9de; stroke: #aab9cb; stroke-width: .7; vector-effect: non-scaling-stroke; }
+.visitor-country.has-visitors { fill: #ffe795; stroke: #788eac; }
+.visitor-markers, .visitor-tosses { position: absolute; inset: 0; pointer-events: none; }
+.map-pokeball { position: relative; display: inline-block; width: 20px; height: 20px; flex: 0 0 20px; border: 2px solid var(--ink); border-radius: 50%; background: linear-gradient(to bottom, #f77c72 0 44%, var(--ink) 44% 56%, #fff 56% 100%); box-shadow: 1px 2px 0 rgba(24,40,73,.16); }
+.map-pokeball::after { content: ""; position: absolute; top: 50%; left: 50%; width: 7px; height: 7px; border: 1.6px solid var(--ink); border-radius: 50%; background: #fff; transform: translate(-50%, -50%); }
+.visitor-marker { position: absolute; display: grid; place-items: center; width: 30px; height: 30px; padding: 0; border: 0; background: transparent; transform: translate(-50%, -50%); pointer-events: auto; cursor: pointer; z-index: 1; }
+.visitor-marker .map-pokeball { width: 19px; height: 19px; transition: transform .2s ease; }
+.visitor-marker:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 50%; z-index: 3; }
+.visitor-marker.is-selected { z-index: 3; }
+.visitor-marker.is-selected .map-pokeball { box-shadow: 0 0 0 5px rgba(73,124,245,.23); }
+.visitor-marker.is-tossed .map-pokeball { background: linear-gradient(to bottom, var(--yellow) 0 44%, var(--ink) 44% 56%, #fff 56% 100%); }
+.visitor-map-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 28px 12px; }
+.visitor-map-help { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.visitor-toss-button { flex-shrink: 0; padding: 7px 12px; border: 1.5px solid var(--ink); border-radius: 9px; background: var(--yellow-soft); color: var(--ink); font-size: 13px; font-weight: 800; }
+.visitor-map-detail { min-height: 43px; padding: 0 28px 13px; font-size: 14px; font-weight: 750; }
+.visitor-region-list { display: flex; flex-wrap: wrap; gap: 7px; padding: 0 28px 0; max-height: 150px; overflow-y: auto; }
+.visitor-region-list:empty { display: none; }
+.visitor-region-button { display: inline-flex; align-items: center; gap: 7px; padding: 5px 10px; border: 1px solid #c8d4ec; border-radius: 8px; background: var(--blue-soft); color: var(--ink); font-size: 12px; }
+.visitor-region-button .map-pokeball { width: 13px; height: 13px; flex-basis: 13px; border-width: 1.3px; box-shadow: none; }
+.visitor-region-button .map-pokeball::after { width: 5px; height: 5px; border-width: 1px; }
+.visitor-region-button[aria-pressed="true"] { border-color: var(--blue); background: var(--yellow-soft); }
+.visitor-map-credit { margin: 0; padding: 18px 28px 22px; color: var(--muted); font-size: 11px; line-height: 1.7; }
+.visitor-map-credit a { color: inherit; }
+@keyframes pokeball-arrive { 0% { opacity: 0; transform: translateY(-12px) scale(.65) rotate(-35deg); } 65% { opacity: 1; transform: translateY(2px) scale(1.05) rotate(8deg); } 100% { opacity: 1; transform: translateY(0) scale(1) rotate(0); } }
+@media (prefers-reduced-motion: no-preference) { .visitor-marker.is-new .map-pokeball { animation: pokeball-arrive .5s ease-out both; } }
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) { .visitor-marker:hover { z-index: 3; } .visitor-marker:hover .map-pokeball { transform: scale(1.2) rotate(-10deg); } }
+@media (max-width: 760px) { .visitor-card-header { padding: 21px 20px; flex-wrap: wrap; gap: 17px; } .visitor-stats { gap: 23px; } .visitor-stats strong { font-size: 25px; } .visitor-map-toolbar { padding: 15px 20px 10px; align-items: flex-start; } .visitor-map-detail { padding: 0 20px 12px; } .visitor-region-list { padding-inline: 20px; } .visitor-map-credit { padding: 16px 20px 20px; } }
+@media (max-width: 560px) { .visitor-map-canvas { aspect-ratio: 2; } .visitor-marker { width: 26px; height: 26px; } .visitor-marker .map-pokeball { width: 15px; height: 15px; border-width: 1.4px; } .visitor-marker .map-pokeball::after { width: 5px; height: 5px; border-width: 1.2px; } .visitor-map-toolbar { flex-wrap: wrap; gap: 9px; } .visitor-kicker { font-size: 15px; } }
+@media (prefers-reduced-motion: reduce) { .visitor-marker .map-pokeball { animation: none !important; transition: none !important; } }
+@media print { .visitor-card { box-shadow: none; break-inside: avoid; } .visitor-map-toolbar, .visitor-map-credit { display: none; } }

@@ -18,5 +18,8 @@ main:
   - title: "Education"
     url: "/#education"
 
+  - title: "Visitors"
+    url: "/#visitors"
+
   - title: "Contact"
     url: "/#contact"
