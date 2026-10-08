@@ -31,12 +31,14 @@ I have also served as a reviewer for Pattern Recognition.
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/aullmpp.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[AULLM++: Structural Reasoning with Large Language Models for Micro-Expression Recognition](https://scholar.google.com/citations?user=yIlUO94AAAAJ)
+[AULLM++: Structured-Token-Conditioned Large Language Models for Micro-Expression Action Unit Detection](https://scholar.google.com/citations?user=yIlUO94AAAAJ)
 
 **Zhishu Liu**, Kaishen Yuan, Bo Zhao, Hui Ma, Zitong Yu.
 
-[**Project**](#) <strong><span class='show_paper_citations' data='yIlUO94AAAAJ:d1gkVwhDpl0C'></span></strong>
-- This paper introduces structural reasoning with large language models to enhance micro-expression action units detection accuracy.
+**Status:** Under review at IEEE Transactions on Biometrics, Behavior, and Identity Science (TBIOM); Minor Revision received on October 5, 2026 (not yet accepted).
+
+[**Project**](https://github.com/ZS-liu-JLU/AULLMplusplus) <strong><span class='show_paper_citations' data='yIlUO94AAAAJ:d1gkVwhDpl0C'></span></strong>
+- This paper uses structured-token-conditioned large language models for micro-expression action unit detection.
 </div></div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CCBR 2025</div><img src='images/CCBR.png' alt="sym" width="100%"></div></div>
@@ -46,7 +48,7 @@ I have also served as a reviewer for Pattern Recognition.
 
 **Zhishu Liu**, Kaishen Yuan, Bo Zhao, Yong Xu, Zitong Yu.
 
-[**Project**](#) <strong><span class='show_paper_citations' data='yIlUO94AAAAJ:ALROH1vI_8AC'></span></strong>
+[**Project**](https://github.com/ZS-liu-JLU/AU-LLMs) <strong><span class='show_paper_citations' data='yIlUO94AAAAJ:ALROH1vI_8AC'></span></strong>
 - This paper addresses the task of micro-vision by using large models to maximize the accuracy of micro-expression action units (AUs) recognition.
 </div></div>
 
