@@ -1,0 +1,31 @@
+# Preserve the exact author order and verified venue/status of every paper.
+# Non-first-author papers belong in collaborations, using the same fields below.
+first_author:
+  - title: "AULLM++: Structured-Token-Conditioned Large Language Models for Micro-Expression Action Unit Detection"
+    short_name: "AULLM++"
+    authors: ["Zhishu Liu", "Kaishen Yuan", "Bo Zhao", "Hui Ma", "Zitong Yu"]
+    venue: "TBIOM · Under review"
+    year: "2026"
+    badge: "Minor Revision"
+    status: "Under review at IEEE Transactions on Biometrics, Behavior, and Identity Science (TBIOM); Minor Revision received on October 5, 2026 (not yet accepted)."
+    summary: "Structured-token-conditioned large language models for micro-expression action unit detection."
+    image: "/images/aullmpp.png"
+    image_alt: "Overview of the AULLM++ micro-expression action unit detection framework"
+    paper_url: "https://scholar.google.com/citations?user=yIlUO94AAAAJ"
+    project_url: "https://github.com/ZS-liu-JLU/AULLMplusplus"
+    citation_id: "yIlUO94AAAAJ:d1gkVwhDpl0C"
+  - title: "AU-LLM: Micro-Expression Action Unit Detection via Enhanced LLM-Based Feature Fusion"
+    short_name: "AU-LLM"
+    authors: ["Zhishu Liu", "Kaishen Yuan", "Bo Zhao", "Yong Xu", "Zitong Yu"]
+    venue: "CCBR 2025"
+    year: "2025"
+    badge: "Oral presentation"
+    summary: "Enhanced LLM-based feature fusion for micro-expression action unit detection."
+    image: "/images/CCBR.png"
+    image_alt: "Overview of the AU-LLM enhanced feature fusion framework"
+    paper_url: "https://scholar.google.com/citations?user=yIlUO94AAAAJ"
+    project_url: "https://github.com/ZS-liu-JLU/AU-LLMs"
+    citation_id: "yIlUO94AAAAJ:ALROH1vI_8AC"
+
+# Add verified co-authored papers here; never move first-author papers into this list.
+collaborations: []

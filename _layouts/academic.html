@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include seo.html %}
+  <meta name="description" content="Zhishu Liu's research in micro-expression recognition, action unit detection, and multimodal large models for affective computing.">
+  <meta name="theme-color" content="#fff6ce">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon-32x32.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/images/apple-touch-icon.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  <script src="{{ '/assets/js/academic.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+</head>
+{% if site.google_scholar_stats_use_cdn %}
+  {% assign citations_url = 'https://cdn.jsdelivr.net/gh/' | append: site.repository | append: '@google-scholar-stats/gs_data.json' %}
+{% else %}
+  {% assign citations_url = 'https://raw.githubusercontent.com/' | append: site.repository | append: '/google-scholar-stats/gs_data.json' %}
+{% endif %}
+<body class="academic-body" data-citations-url="{{ citations_url | escape }}">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#about-me" aria-label="Zhishu Liu, back to the top"><span class="brand-mark" aria-hidden="true"></span><span class="brand-name">Zhishu Liu<span>Academic homepage</span></span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu <span aria-hidden="true">☰</span></button>
+        <div class="nav-links" id="main-nav">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#publications">Papers</a>
+          <a class="nav-link" href="#collaborations">Collaborations</a>
+          <a class="nav-link" href="#journey">Journey</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="site-main" id="main-content">{{ content }}</main>
+  <footer class="site-footer"><div class="footer-inner"><p>© {{ site.time | date: '%Y' }} Zhishu Liu · Research, learning &amp; a little adventure.</p><a class="footer-top-link" href="#about-me">Back to top</a></div></footer>
+  {% include analytics.html %}
+</body>
+</html>

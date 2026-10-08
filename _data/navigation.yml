@@ -1,22 +1,22 @@
-# main links links
+# Section links shared with the classic layout.
 main:
   - title: "About Me"
     url: "/#about-me"
 
   - title: "News"
-    url: "/#-news"
+    url: "/#news"
 
-  - title: "Publications"
-    url: "/#-publications"
+  - title: "First-author Papers"
+    url: "/#publications"
+
+  - title: "Collaborative Papers"
+    url: "/#collaborations"
 
   - title: "Honors and Awards"
-    url: "/#-honors-and-awards"
+    url: "/#awards"
 
-  - title: "Educations"
-    url: "/#-educations"
+  - title: "Education"
+    url: "/#education"
 
-  - title: "Invited Talks"
-    url: "/#-invited-talks"
-
-  - title: "Internships"
-    url: "/#-internships"
+  - title: "Contact"
+    url: "/#contact"

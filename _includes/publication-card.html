@@ -1,0 +1,15 @@
+<article class="paper-card paper-box">
+  {% if paper.image %}<div class="paper-visual"><img class="paper-image" src="{{ paper.image | relative_url }}" alt="{{ paper.image_alt | default: paper.short_name | escape }}" loading="lazy" decoding="async">{% if paper.short_name %}<span class="paper-stamp">{{ paper.short_name | escape }}</span>{% endif %}</div>{% endif %}
+  <div class="paper-content">
+    <div class="paper-meta"><span class="paper-venue">{{ paper.venue | escape }}</span>{% if paper.badge %}<span class="tag">{{ paper.badge | escape }}</span>{% endif %}{% if paper.year %}<span class="paper-year">{{ paper.year | escape }}</span>{% endif %}</div>
+    <h3 class="paper-title">{{ paper.title | escape }}</h3>
+    <p class="paper-authors">{% for author in paper.authors %}{% if author == 'Zhishu Liu' %}<strong>{{ author | escape }}</strong>{% else %}{{ author | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}.</p>
+    {% if paper.status %}<p class="paper-status">{{ paper.status | escape }}</p>{% endif %}
+    {% if paper.summary %}<p class="paper-summary">{{ paper.summary | escape }}</p>{% endif %}
+    <div class="paper-links">
+      {% if paper.paper_url %}<a class="paper-link" href="{{ paper.paper_url | escape }}" target="_blank" rel="noopener noreferrer">{% if paper.paper_url contains 'scholar.google.com/citations?' %}Google Scholar{% else %}Paper{% endif %}</a>{% endif %}
+      {% if paper.project_url %}<a class="paper-link" href="{{ paper.project_url | escape }}" target="_blank" rel="noopener noreferrer">Project</a>{% endif %}
+      {% if paper.citation_id %}<span class="show_paper_citations" data="{{ paper.citation_id | escape }}" aria-live="polite"></span>{% endif %}
+    </div>
+  </div>
+</article>
