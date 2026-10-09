@@ -3,7 +3,7 @@
   <div class="paper-content">
     <div class="paper-meta"><span class="paper-venue">{{ paper.venue | escape }}</span>{% if paper.badge %}<span class="tag">{{ paper.badge | escape }}</span>{% endif %}{% if paper.year %}<span class="paper-year">{{ paper.year | escape }}</span>{% endif %}</div>
     <h3 class="paper-title">{{ paper.title | escape }}</h3>
-    <p class="paper-authors">{% for author in paper.authors %}{% if author == 'Zhishu Liu' %}<strong>{{ author | escape }}</strong>{% else %}{{ author | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}.</p>
+    <p class="paper-authors">{% for author in paper.authors %}{% if author == 'Zhishu Liu' %}<strong>{{ author | escape }}</strong>{% else %}{{ author | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}.{% if paper.author_note %}<br><span class="paper-author-note">{{ paper.author_note | escape }}</span>{% endif %}</p>
     {% if paper.status %}<p class="paper-status">{{ paper.status | escape }}</p>{% endif %}
     {% if paper.summary %}<p class="paper-summary">{{ paper.summary | escape }}</p>{% endif %}
     <div class="paper-links">

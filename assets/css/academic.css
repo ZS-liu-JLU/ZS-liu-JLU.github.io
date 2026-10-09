@@ -324,7 +324,7 @@ body.academic-body {
   .news-card { flex-direction: column; gap: 6px; }
   .news-copy { font-size: 16px; }
   .paper-card { grid-template-columns: 1fr; box-shadow: 4px 4px 0 var(--ink); }
-  .paper-visual { min-height: 0; height: 210px; padding: 32px 20px 16px; border-right: 0; border-bottom: var(--line); }
+  .paper-visual { min-height: 0; height: 210px; padding: 48px 20px 16px; border-right: 0; border-bottom: var(--line); }
   .paper-image { width: auto; max-width: 100%; max-height: 100%; }
   .paper-content { padding: 21px 20px 22px; }
   .paper-title { font-size: 19px; }
