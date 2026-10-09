@@ -16,6 +16,10 @@ visitor_map:
   domain: "zs-liu-jlu.github.io"
   site_id: "c196c9c2-4160-4d07-a7fe-d1602fecac44"
 
+# Public decorative counter; no secret or API token.
+pokemon_cheers:
+  counter_key: "zs-liu-jlu-cheers-31cd27e64da942f6bc69a56ad64b7d23"
+
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
 

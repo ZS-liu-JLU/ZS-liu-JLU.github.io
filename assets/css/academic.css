@@ -88,17 +88,18 @@ body.academic-body {
 .button-secondary { background: var(--white); }
 .button:hover { transform: translate(1px, 1px); box-shadow: 2px 2px 0 var(--ink); color: var(--ink); }
 .hero-art { position: relative; isolation: isolate; padding: 17px 11px 18px; }
-.hero-art::before { content: ""; position: absolute; inset: -5px -25px -10px -22px; z-index: -2; border-radius: 50%; background-image: radial-gradient(#cad7eb 1.2px, transparent 1.2px); background-size: 13px 13px; transform: rotate(-8deg); }
-.hero-art::after { content: ""; position: absolute; width: 140px; height: 140px; right: -21px; bottom: -5px; z-index: -1; border: var(--line); border-radius: 50%; background: var(--yellow); }
+.hero-art::before { content: ""; position: absolute; inset: -5px 0 -10px; z-index: -2; border-radius: 50%; background-image: radial-gradient(#cad7eb 1.2px, transparent 1.2px); background-size: 13px 13px; transform: rotate(-4deg); }
+.hero-art::after { content: ""; position: absolute; width: 140px; height: 140px; right: -21px; bottom: 60px; z-index: -1; border: var(--line); border-radius: 50%; background: var(--yellow); }
 .art-frame { position: relative; border: 3px solid var(--ink); border-radius: 24px; background: var(--mint); box-shadow: 8px 8px 0 var(--ink); transform: rotate(3deg); overflow: hidden; }
-.hero-illustration { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.hero-illustration { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
 .art-label { position: absolute; bottom: 18px; left: 17px; max-width: calc(100% - 34px); padding: 5px 12px; border: var(--line); border-radius: 7px; background: var(--paper); font-size: 12px; font-weight: 850; letter-spacing: .7px; transform: rotate(-3deg); box-shadow: 2px 2px 0 var(--ink); }
 .spark { position: absolute; z-index: 3; font-size: 46px; line-height: 1; color: var(--yellow); -webkit-text-stroke: 1.5px var(--ink); text-shadow: 2px 3px 0 var(--ink); }
 .spark-one { left: -18px; top: 38px; transform: rotate(-12deg); }
 .spark-two { right: -9px; top: -8px; font-size: 37px; transform: rotate(13deg); }
 .hero-sticker { position: absolute; z-index: 4; padding: 7px 13px; border: var(--line); border-radius: 10px; box-shadow: 3px 3px 0 var(--ink); font-size: 12px; font-weight: 850; white-space: nowrap; }
 .sticker-one { right: -30px; top: 31px; background: var(--yellow); transform: rotate(9deg); }
-.sticker-two { left: -25px; bottom: 23px; background: var(--blue-soft); transform: rotate(-7deg); }
+/* This sticker has its own row below the frame, clear of the inner caption. */
+.sticker-two { position: relative; display: block; width: max-content; max-width: 100%; inset: auto; margin: 30px 0 0 11px; background: var(--blue-soft); transform: rotate(-5deg); }
 .profile-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 20px; align-items: stretch; }
 .profile-strip { display: flex; align-items: center; flex-wrap: nowrap; gap: 17px; min-width: 0; padding: 20px 25px; border: var(--line); border-radius: var(--radius); background: var(--white); box-shadow: 4px 4px 0 #d9e5ff; transition: transform .2s ease; }
 .profile-strip-undergraduate { background: #fffae8; box-shadow: 4px 4px 0 #f1df98; }
@@ -230,7 +231,6 @@ body.academic-body {
   .header-inner, .footer-inner { width: calc(100% - 64px); }
   .hero { gap: 42px; }
   .sticker-one { right: -12px; }
-  .sticker-two { left: -12px; }
 }
 @media (max-width: 940px) {
   .header-inner { gap: 14px; }
@@ -278,7 +278,6 @@ body.academic-body {
   .spark-one { font-size: 35px; left: -12px; top: 40px; }
   .spark-two { font-size: 30px; right: -7px; }
   .sticker-one { top: 22px; right: -5px; }
-  .sticker-two { bottom: 14px; left: -7px; }
   .profile-strip { gap: 14px; padding: 18px; border-radius: 16px; }
   .profile-avatar { width: 48px; height: 48px; }
   .profile-school-badge { width: 48px; height: 48px; flex-basis: 48px; border-radius: 13px; font-size: 14px; }
@@ -307,13 +306,11 @@ body.academic-body {
   .hero-description { font-size: 16px; margin-bottom: 23px; }
   .hero-actions .button { font-size: 13px; padding: 10px 16px; }
   .hero-art { width: min(345px, calc(100% - 34px)); margin: 3px auto 0; }
-  .hero-art::before { inset: -6px -17px -8px; }
   .hero-art::after { width: 118px; height: 118px; right: -14px; }
   .art-frame { border-radius: 22px; }
   .art-label { font-size: 10px; left: 15px; bottom: 15px; }
   .hero-sticker { font-size: 11px; }
   .sticker-one { right: -15px; top: 27px; }
-  .sticker-two { left: -18px; bottom: 23px; }
   .spark-one { left: -20px; font-size: 41px; }
   .spark-two { right: -11px; top: -4px; font-size: 35px; }
   .profile-name { font-size: 15px; }

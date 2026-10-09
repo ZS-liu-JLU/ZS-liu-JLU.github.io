@@ -1,0 +1,27 @@
+<section class="content-section pokemon-cheers" id="cheers" aria-labelledby="cheers-title" data-counter-key="{{ site.pokemon_cheers.counter_key | escape }}" data-site-domain="{{ site.visitor_map.domain | escape }}">
+  <div class="cheers-card">
+    <div class="cheers-copy">
+      <p class="section-eyebrow">A tiny happy break</p>
+      <h2 class="section-title" id="cheers-title">Leave a little love.</h2>
+      <p class="cheers-intro" id="cheers-rules">Tap either friend to send a like. One like per visit, but as many playful taps as you wish!</p>
+      <div class="cheers-counter" aria-label="Total likes"><span class="cheers-heart" aria-hidden="true">♥</span><span data-cheers-count>—</span><span class="cheers-counter-label">little cheers</span></div>
+      <p class="cheers-status" data-cheers-status role="status">Two tiny friends. One big thank-you.</p>
+      <noscript><p class="cheers-status">Enable JavaScript to play with these two friends.</p></noscript>
+    </div>
+    <div class="cheers-friends">
+      <button class="cheer-friend cheer-psyduck" type="button" data-pokemon="psyduck" aria-label="Play with Psyduck and send a like" aria-describedby="cheers-rules" disabled>
+        <span class="cheer-speech" aria-hidden="true">Psy… duck?</span>
+        <span class="cheer-stage"><span class="cheer-ground" aria-hidden="true"></span><img class="cheer-sprite" src="{{ '/images/theme/psyduck.png' | relative_url }}" width="512" height="512" loading="lazy" decoding="async" alt=""><span class="cheer-particles" aria-hidden="true"></span></span>
+        <span class="cheer-name">Psyduck <span>可达鸭</span></span>
+        <span class="cheer-hint" aria-hidden="true">Tap for a tiny wobble</span>
+      </button>
+      <button class="cheer-friend cheer-slowpoke" type="button" data-pokemon="slowpoke" aria-label="Play with Slowpoke and send a like" aria-describedby="cheers-rules" disabled>
+        <span class="cheer-speech" aria-hidden="true">…Oh. Hello!</span>
+        <span class="cheer-stage"><span class="cheer-ground" aria-hidden="true"></span><img class="cheer-sprite" src="{{ '/images/theme/slowpoke.png' | relative_url }}" width="512" height="512" loading="lazy" decoding="async" alt=""><span class="cheer-particles" aria-hidden="true"></span></span>
+        <span class="cheer-name">Slowpoke <span>呆呆兽</span></span>
+        <span class="cheer-hint" aria-hidden="true">A very unhurried hello</span>
+      </button>
+    </div>
+    <span class="cheers-sr-only" data-cheers-announcement role="status" aria-live="polite"></span>
+  </div>
+</section>
